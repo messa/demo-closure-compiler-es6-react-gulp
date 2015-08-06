@@ -1,5 +1,5 @@
 
-import  bar from './bar';
+import bar from './bar';
 
 class Hello {
 
