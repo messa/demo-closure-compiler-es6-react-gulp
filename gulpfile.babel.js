@@ -13,6 +13,7 @@ gulp.task('babel', ['clean'], () => {
   return gulp.src('src/**/*.js')
     .pipe(babel({
       whitelist: ['react']
+      // only process React syntax, leave everything else to Closure Compiler
     }))
     .pipe(gulp.dest('build/babel'));
 });
